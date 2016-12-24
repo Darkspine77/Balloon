@@ -1,0 +1,55 @@
+body {
+    background-color: #16C9FF;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    text-align: center
+
+}
+
+.submit {
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4392FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #0151C0;
+ 
+}
+
+.submit:hover {background-color: #1678FF}
+
+#fileInput::-webkit-file-upload-button {
+    font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #00FFC6;
+  background-color: #4392FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #0151C0;
+}
+
+#fileInput{
+    color: #0151C0;
+    font-size: 18px;
+}
+
+.textBox {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #1678FF;
+    border-radius: 10px;
+    background-color: #4392FF;
+    resize: none;
+}

@@ -1,0 +1,39 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="css/index.css">
+    </head>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <body>
+    <img id="logo" class="center" src="images/Balloon_logo.png">
+    <img id="retrieve" src="images/Retrieve.png" class="submit center">
+    <br>
+    <img id="upload" src="images/Upload.png" class="submit center">
+    <div id="displayRetrieve">
+        <div id="retrieveInput">
+        <img  src="images/EnterKey.png" class="center">
+        <textarea id="keyInput" class="textBox" rows="4" cols="50"></textarea>
+        <img id="retrieveData" src="images/RetrieveActionButton.png" class="submit center">
+        </div>
+        <div class="center" id="retrieveOutput">
+        </div>
+    </div>
+    <div id="displaySubmit">
+        <div id="submitInput">
+        <img  src="images/UploadFilePrompt.png" class="center">
+        <input id="fileInput" type="file" class="center">
+        <img  src="images/Or.png" class="center">
+        <img  src="images/PasteText.png" class="center">
+        <textarea id="textInput" class="textBox" rows="4" cols="50"></textarea>
+        <br>
+        <img id="submit" src="images/Submit.png" class="submit center">
+        </div>
+        <div class="center" id="displayOutput">
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    </body>
+</html> 
