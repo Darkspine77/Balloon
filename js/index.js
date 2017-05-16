@@ -44,7 +44,9 @@ $("#displaySubmit").hide();
         if(document.getElementById("fileInput").files[0] == null){
             key = makeid();
             uploadText(key,$("#textInput").val());
-            
+            $("#displayOutput").append(
+                '<p align="center"> Your retrieval key is: ' + key + '<p>'
+            );
         }
         if($("#textInput").val() == ""){
             key = makeid();
