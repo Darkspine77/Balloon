@@ -97,14 +97,14 @@ function retrieveData(key){
     var balloon = firebase.database().ref('balloons/' + key);   
     balloon.once('value').then(function(snapshot) 
     {
-       if(!(snapshot.val().object).startsWith("https://")){
-       $("#retrieveOutput").append(
-                        '<img  src="images/RetrievedText.png" class="center"><p align="center">' + snapshot.val().object + '<p>'
-        	        );
+        if(snapshot.val().object != undefined){
+        $("#retrieveOutput").append(
+                       '<img  src="images/RetrievedText.png" class="center"><p align="center">' + snapshot.val().object + '<p>'
+    	           );
         } else {
             $("#retrieveOutput").append(
-                        '<img  src="images/RetrievedFile.png" class="center"><p align="center"><a href="' + snapshot.val().object + '">Link to file</a><p>'
-        	        );
+                      '<img  src="images/RetrievedFile.png" class="center"><p align="center"><a href="' + snapshot.val().object + '">Link to file</a><p>'
+    	           );
         }
     });
 }
